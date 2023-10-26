@@ -1,0 +1,61 @@
+﻿@page
+@model Disaster_Alleviation.Areas.Identity.Pages.DisasterModel
+
+@{
+    ViewData["Title"] = "Disasters Page";
+}
+
+
+<body style="background-image: linear-gradient(to right top, #d2b68c, #cfac77, #cba261, #c7984c, #c38e35, #cf832e, #dc762e, #e86633, #ff4c5b, #ff388b, #fd40c3, #d25ffb);">
+
+    <header><h1><b>New Disasters Page</b></h1></header>
+   
+    <section>   
+        <div class="text-center">>
+
+  
+    <h2>Capture A New Disaster</h2>
+    <form method="post">
+
+    <br />
+    <b> Start Date </b>
+    <br />
+        <input type="date" name="startDate" />
+    <br />
+    <br />
+        
+        <b> End Date </b>
+        <br />
+        <input type="date" name="endDate" />
+        <br />
+        <br />
+        <b>Disaster Location </b>
+    <br />
+    <input type="text" name="disLocation" />
+    <br />
+    <br />
+        <b>Disaster Description  </b>
+    <br />
+     
+    <input type="text" name="disDescription"/>
+   
+        
+    <br />
+    <br />
+        <b>Required Aid Type:   </b>
+        <br />
+        Water Provision, Clothing, Food or Orther
+        <br />
+        <input type="text" name="reqAid"/>
+        <br />
+        <br />
+
+    <input type="submit" value="save"/>
+
+    </form>
+</div>
+    </section>
+
+
+
+</body>

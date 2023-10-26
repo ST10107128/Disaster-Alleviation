@@ -1,0 +1,41 @@
+﻿@page
+@model Disaster_Alleviation.Areas.Identity.Pages.NewDonationModel
+
+@{
+    ViewData["Title"] = "Monetary Donations";
+}
+
+<header class="text-center"><h1><b>New Monetary Donations</b></h1></header>
+<body style="background-image: linear-gradient(to right top, #d2b68c, #cfac77, #cba261, #c7984c, #c38e35, #cf832e, #dc762e, #e86633, #ff4c5b, #ff388b, #fd40c3, #d25ffb);">
+
+    <section>
+    <div class="text-center">
+<h2>New Monetary Donations</h2>
+<div>
+    <form method="post">
+   
+    <br />
+    <b> Date </b>
+    <br />
+    <input type="date" name="moneydate" />
+        <br />
+        <br />
+    <b>Amount</b>
+    <br />
+    <input type="text" name="moneyamount"  />
+    <br />
+    <br />
+    Enter your full name, or if you wish to stay anonymous, write "Anonymous"<br />
+    <input type="text"  name="anony">
+
+        <br />
+        <br />
+    <input type="submit" value="save"/>
+
+    </form>
+</div>
+
+    </div>
+    </section>
+
+</body>
