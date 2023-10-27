@@ -56,7 +56,7 @@ namespace Disaster_Alleviation.Areas.Identity.Pages.Account.Manage
         }
 
 
-
+/*
         public IActionResult OnGet()
         {
 
@@ -65,7 +65,7 @@ namespace Disaster_Alleviation.Areas.Identity.Pages.Account.Manage
             ViewData["GoodsDonation"] = good_Donations;
             return Page();
         }
-
+*/
     }
 
 }
