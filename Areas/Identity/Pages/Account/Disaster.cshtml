@@ -56,6 +56,50 @@
 </div>
     </section>
 
+    <br />
+
+    <h1><b>Disasters</b></h1>
+
+    <table class="table">
+
+        <thead>
+            <tr>
+
+
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Location</th>
+                <th>Disaster Description</th>
+                <th>Required Aid</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            @if (ViewData["Disaster"] != null)
+
+                foreach (var row in ViewData["Disaster"] as List<string[]>)
+                {
+
+                    <tr>
+
+                        <td>@row[0]</td>
+                        <td>@row[1]</td>
+                        <td>@row[2]</td>
+                        <td>@row[3]</td>
+                        <td>@row[4]</td>
+
+                    </tr>
+
+
+                }
+
+        </tbody>
+
+
+        </table>
 
 
 </body>

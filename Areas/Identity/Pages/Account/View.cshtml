@@ -7,26 +7,33 @@
 }
 
 <body style="background-image: linear-gradient(to right top, #d2b68c, #cfac77, #cba261, #c7984c, #c38e35, #cf832e, #dc762e, #e86633, #ff4c5b, #ff388b, #fd40c3, #d25ffb);">
-
-    <h1><b>Monetary Donations</b></h1>
+    <h3><b>Total Monetary Donations Recieved:</b> R 345000</h3>
+    <h3><b>Amount Of Money Available:</b> R 290000</h3>
+    <h3><b>Total Number Of Goods Recieved:</b> 30  </h3>
+    
+    <br />
+    <br />
+    <h1><b>Currently active Disasters</b></h1>
 
     <table class="table">
         <thead>
             <tr>
-                <th>MonDate</th>
-                <th>MonAmount</th>
-                <th>MonName</th>
+                <th>Disaster</th>
+                <th>Money Allocated</th>
+                <th>Goods Allocated</th>
             </tr>
         </thead>
         <tbody>
-            @if (ViewData["MonetaryDonation"] != null)
+            @if (ViewData["Disaster"]!=null) 
+
             {
-                foreach (var row in ViewData["MonetaryDonation"] as List<string[]>)
+                foreach (var row in ViewData["Disaster"] as List<string[]>)
+                          
                 {
                     <tr>
-                        <td>@row[0]</td>
-                        <td>@row[1]</td>
-                        <td>@row[2]</td>
+                        <td>@row[3]</td>
+                        <td>R 40000</td>
+                        <td>Shelter</td>
                     </tr>
                 }
             }

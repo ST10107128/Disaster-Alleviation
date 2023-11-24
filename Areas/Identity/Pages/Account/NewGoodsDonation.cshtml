@@ -53,5 +53,35 @@
 </div>
 
     </body>
+    <br />
+
+    <h1><b>Goods Donations</b></h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>No Of Items</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>New Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (ViewData["GoodsDonation"] != null)
+            {
+                foreach (var row in ViewData["GoodsDonation"] as List<string[]>)
+                {
+                    <tr>
+                        <td>@row[0]</td>
+                        <td>@row[1]</td>
+                        <td>@row[2]</td>
+                        <td>@row[3]</td>
+                        <td>@row[4]</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
 
 </section>
